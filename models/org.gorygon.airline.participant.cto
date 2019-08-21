@@ -1,0 +1,24 @@
+namespace org.gorygon.airline.participant 
+
+abstract participant GorygonParticipant identified by participantKey {
+  o String participantKey
+
+}
+
+concept Contact {
+  o String fName
+  o String lName
+  o String email
+}
+
+participant GorygonNetworkAdmin extends GorygonParticipant {
+
+}
+
+participant GorygonPersonel extends GorygonParticipant {
+  o String department
+}
+
+participant B2BPartner extends GorygonParticipant {
+  
+}
